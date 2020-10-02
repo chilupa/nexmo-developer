@@ -4,7 +4,7 @@ language: java
 code:
     source: .repos/vonage/vonage-java-code-snippets/src/main/java/com/vonage/quickstart/voice/SendTalkToCall.java
     from_line: 46
-    to_line: 48
+    to_line: 58
 client:
     source: .repos/vonage/vonage-java-code-snippets/src/main/java/com/vonage/quickstart/voice/SendTalkToCall.java
     from_line: 41

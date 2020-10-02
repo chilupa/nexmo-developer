@@ -3,7 +3,7 @@ title: Java
 language: java
 code:
     source: .repos/vonage/vonage-java-code-snippets/src/main/java/com/vonage/quickstart/voice/OutboundTextToSpeech.java
-    from_line: 42
+    from_line: 44
     to_line: 46
 client:
     source: .repos/vonage/vonage-java-code-snippets/src/main/java/com/vonage/quickstart/voice/OutboundTextToSpeech.java

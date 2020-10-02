@@ -7,7 +7,7 @@ code:
     to_line: 60
 client:
     source: .repos/vonage/vonage-java-code-snippets/src/main/java/com/vonage/quickstart/voice/StreamAudioToCall.java
-    from_line: 42
+    from_line: 41
     to_line: 44
 run_command: java-ide
 file_name: StreamAudioToCall.java
