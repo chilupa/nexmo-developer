@@ -235,6 +235,52 @@ The Messages API message would be transformed to something similar to the follow
 
 Where the custom object, `$CUSTOM_OBJECT`, can be anything from within the [Messenger Message Object](https://developers.facebook.com/docs/messenger-platform/send-messages/templates/).
 
+For example, consider sending media by facebook URL, the `$CUSTOM_OBJECT` format would look like
+
+```json
+"message": {
+  "attachment": {
+    "type": "template",
+    "payload": {
+      "template_type": "media",
+      "elements": [{
+        "media_type": "<image|video>",
+        "url": "<FACEBOOK_URL>"
+      }]
+    }
+  }
+}
+```
+
+The Nexmo Messages API request format would be:
+
+```json
+{
+    "from": {
+        "type": "messenger",
+        "id": $FB_SENDER_ID
+    },
+    "to": {
+        "type": "messenger",
+        "id": $FB_RECIPIENT_ID
+    },
+    "message": {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "media",
+                "elements": [
+                    {
+                        "media_type": "<image|video>",
+                        "url": "<FACEBOOK_URL>"
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
 ## See more examples
 
 * [WhatsApp send contact](/messages/code-snippets/whatsapp/send-contact)
