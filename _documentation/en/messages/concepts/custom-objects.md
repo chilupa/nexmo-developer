@@ -235,7 +235,7 @@ The Messages API message would be transformed to something similar to the follow
 
 Where the custom object, `$CUSTOM_OBJECT`, can be anything from within the [Messenger Message Object](https://developers.facebook.com/docs/messenger-platform/send-messages/templates/).
 
-For example, consider sending media by facebook URL, the `$CUSTOM_OBJECT` format would look like
+For example, consider sending media by Facebook URL, the `$CUSTOM_OBJECT` format would look like
 
 ```json
 "message": {
